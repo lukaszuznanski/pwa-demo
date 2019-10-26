@@ -7,10 +7,14 @@ It's based on
 - https://github.com/TYPO3-Initiatives/create-nuxt-typo3
 
 ## Requirements
-All you need is [ddev](https://ddev.readthedocs.io/en/stable/) in version at least v1.11.2.
+All you need is [ddev](https://ddev.readthedocs.io/en/stable/) in version at least v1.11.2 and mkcert as dependency, because we have to provide valid SSL certificate.
 
 ## Installation
-Run ``ddev start``, and you are ready to go.
+First of all, make sure that you have installed ddev and you have generated certificates with mkcert.
+
+Then, clone this repository, ``cd pwa-demo`` and run ``chmod 775 .ddev/import-if-empty.sh``.
+
+Execute ``ddev start``, and you are ready to go.
 
 Access frontend from ```pwa-demo.ddev.site```.
 
